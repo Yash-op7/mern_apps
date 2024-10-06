@@ -20,7 +20,7 @@ function NewProduct() {
         productImage: formDict.get("productImage")
     }
 
-    try {
+    try {ll
         const resp = await axios.post('http://localhost:5000/products', newProduct);
         console.log('form submitted')
     } catch (e) {
@@ -65,7 +65,7 @@ function NewProduct() {
             required
             type="number"
             placeholder="Enter product price"
-            className="border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-red-400"
           />
         </div>
 
@@ -85,7 +85,7 @@ function NewProduct() {
         <input
           type="submit"
           value="Submit"
-          className="bg-blue-500 text-white font-semibold py-2 rounded-md hover:bg-blue-600 transition duration-200"
+          className="bg-blue-500 text-white font-semibold py-2 rounded-md hover:bg-red-600 transition duration-100"
         />
       </form>
     </div>

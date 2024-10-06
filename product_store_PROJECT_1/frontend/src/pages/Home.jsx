@@ -16,7 +16,7 @@ function Home() {
   }
 
   return (
-    <div className="h-full w-full flex flex-col">
+    <div className="flex flex-col">
       <div className='relative mt-4 flex-grow flex flex-row flex-wrap gap-[10px]'>
       {products.map((_, idx) => {
         return <Product key={idx} idx={idx}/>
