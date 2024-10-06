@@ -1,0 +1,7 @@
+::1 - - [06/Oct/2024:22:27:14 +0000] "GET /auth/test HTTP/1.1" 200 10 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+::1 - - [06/Oct/2024:22:27:35 +0000] "GET /tasks/test HTTP/1.1" 200 9 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+::1 - - [06/Oct/2024:22:34:50 +0000] "GET /auth/signup HTTP/1.1" 200 4 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+::1 - - [06/Oct/2024:22:34:57 +0000] "GET /auth/signup HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+::1 - - [06/Oct/2024:22:34:58 +0000] "GET /auth/signup HTTP/1.1" 200 8 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+::1 - - [06/Oct/2024:23:31:17 +0000] "POST /auth/signup HTTP/1.1" 201 44 "-" "PostmanRuntime/7.39.1"
+::1 - - [06/Oct/2024:23:31:24 +0000] "POST /auth/signup HTTP/1.1" 409 76 "-" "PostmanRuntime/7.39.1"
