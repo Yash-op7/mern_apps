@@ -11,10 +11,15 @@ async function getProduct(req, res, next) {
 
     try {
         const product = await Product.findById(id)
+        if (!product) {
+            return res.status(404).json({
+                message: 'Product not found',
+            });
+        }
         req.product = product;
         next();
     } catch (err) {
-        return res.status(500).json({
+        return res.status(404).json({
             message: 'Invalid id or server error.',
             error:err
         })
