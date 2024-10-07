@@ -7,15 +7,9 @@ router.get('/test', (req, res) => {
     res.send('tested...');
 })
 
-/* ROUTES RELATED TO TASKS */
 
-// get all tasks, 2 routes
-//  - assigned by them
-//  - assigned to them
 router.get('/todo', tasksController.fetchTasksToDo);
 router.get('/owned', tasksController.fetchTasksOwned);
-
-// mark task as completed, post request by taskId, can only be made to the tasks assigned to the current user
 router.patch('/:taskId/completed', tasksController.markTaskCompleted)
 
 // createTask
