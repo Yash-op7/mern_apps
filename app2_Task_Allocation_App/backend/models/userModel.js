@@ -17,12 +17,14 @@ const userSchema = new mongoose.Schema({
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Task'
         }],
+        default: []
     },
     tasksAssigned: {
         type: [{
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Task'
         }],
+        default: []
     }
 });
 
